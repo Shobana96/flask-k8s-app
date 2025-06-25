@@ -6,6 +6,7 @@ pipeline {
     TAG = "${BUILD_NUMBER}"
   }
 
+  stages {
     stage('Build Docker Image') {
       steps {
         script {
@@ -31,4 +32,5 @@ pipeline {
     }
   }
 }
+
 
