@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/Shobana96/flask-k8s-app.git'
+        echo "Code already checked out via SCM"
       }
     }
 
