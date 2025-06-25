@@ -6,13 +6,6 @@ pipeline {
     TAG = "${BUILD_NUMBER}"
   }
 
-  stages {
-    stage('Checkout') {
-      steps {
-        echo "Code already checked out via SCM"
-      }
-    }
-
     stage('Build Docker Image') {
       steps {
         script {
